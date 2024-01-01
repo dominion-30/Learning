@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <meta name="keywords" content="Form, Styling, CSS, Web design">
+    <meta name="description" content="This website demonstrates how to style an a signup form">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #4d64a0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            height: 700px;
+
+        }
+        .container{
+            margin-right:auto;
+            margin-left: auto;
+            margin-top: 50px;
+            width: 350px;
+            height: 550px;
+            padding: 50px;
+            background-color: #fff;
+            
+        }
+
+        .container text{
+            margin-top: 0;
+            
+        }
+        
+
+        .container label{
+            display: block;
+        }
+        .container input{
+            width: 100%;
+            padding: 5px 10px;
+            border: 2px solid #f5efef;
+            margin-bottom: 5px;
+        }
+        .submit{
+            display: block;
+            background-color: rgb(78, 231, 78);
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        .submit a{
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            
+            
+        }
+        p{
+            font-size: 14px;
+        }
+        p a{
+            font-size: 10px;
+        }
+        .acc {
+            margin-top: 30px;
+            
+           
+            color: #fff;
+            
+        }
+
+        .acc a{
+            text-decoration: none;
+            color: rgb(78, 231, 78);
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h3>Sign Up</h3>
+            <p>It's free and only takes a minute</p>
+        </div>
+       
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="password">Confirm Password</label>
+            <input type="password" name="password" id="password">
+            <br>
+
+            
+        </form>
+        <span class="submit"><a href="#">Submit</a></span>
+
+        <p>By clicking the Sign Up button, you agree to our<a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+
+        <p class="acc">Already have an account? <span><a href="#">Login Here</a></span></p>
+
+    </div>
+    
+</body>
+</html>
