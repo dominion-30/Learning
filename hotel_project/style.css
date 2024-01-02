@@ -73,3 +73,30 @@ p{
 .hero-box h2 span{
     color: coral;
 }
+
+.hero-box p{
+    color: #fff;
+}
+.hero-box button{
+    color: #fff;
+    background-color: #333;
+    padding: 15px;
+    border: 1px solid #333
+}
+
+.container{
+    width: 100%;
+}
+
+.container img{
+    float: left;
+    width: 40%;
+
+}
+.container section{
+    float: right;
+    width: 40%;
+}
+
+
+
