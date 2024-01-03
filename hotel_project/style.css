@@ -54,6 +54,7 @@ p{
     color: #f7c08a;;
 }
 
+/* Utility Classes */
 .container{
     max-width: 1200px;
     overflow: auto;
@@ -61,6 +62,26 @@ p{
     padding: 0 20px;
   
 }
+.text-primary{
+    color: #f7c08a;
+}
+
+.lead{
+    font-size: 20px;
+}
+.btn{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+.btn:hover{
+    color: #f7c08a;
+
+}
+
+
+
 
 #showcase{
     background-image: url("./img/showcase.jpg");
@@ -81,7 +102,7 @@ p{
     font-size: 60px;
     line-height: 1.2em;
 }
-
-.text-primary{
-    color: #f7c08a;
+#showcase .showcase-content p{
+    padding-bottom: 20px;
 }
+
