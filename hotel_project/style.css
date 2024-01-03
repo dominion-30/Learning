@@ -74,11 +74,23 @@ p{
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn-light{
+    background-color: #f4f4f4;
+    color: #333;
 }
 .btn:hover{
-    color: #f7c08a;
+    background-color: #f7c08a;
+    color: #333;
 
 }
+
+/* .bg-dark{
+    background-color: #333;
+} */
+
 
 
 
@@ -104,5 +116,27 @@ p{
 }
 #showcase .showcase-content p{
     padding-bottom: 20px;
+}
+
+#home-info{
+    height: 400px;
+}
+#home-info .info-img{
+    float: left;
+    background-image: url("img/photo-1.jpg");
+    width: 50%;
+    min-height: 100%;
+ 
+    
+}
+#home-info .info-content{
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+#home-info .info-content h3{
+font-size: 50px;
 }
 
