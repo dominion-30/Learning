@@ -81,16 +81,23 @@ p{
     background-color: #f4f4f4;
     color: #333;
 }
+.bg-dark{
+    background-color: #333;
+    color: #fff;
+}
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.bg-primary{
+    background-color: #333;
+    color: #f7c08a;;
+}
 .btn:hover{
     background-color: #f7c08a;
     color: #333;
 
 }
-
-/* .bg-dark{
-    background-color: #333;
-} */
-
 
 
 
@@ -133,10 +140,15 @@ p{
     float: right;
     width: 50%;
     text-align: center;
-    padding: 20px;
+    padding: 50px 30px;
+    height: 100%;
+}
+#home-info .info-content p{
+    padding-bottom: 20px;
 }
 
-#home-info .info-content h3{
-font-size: 50px;
-}
+
+
+
+
 
