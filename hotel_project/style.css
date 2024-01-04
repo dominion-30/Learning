@@ -90,8 +90,8 @@ p{
     color: #333;
 }
 .bg-primary{
-    background-color: #333;
-    color: #f7c08a;;
+    color: #333;
+    background-color: #f7c08a;;
 }
 .btn:hover{
     background-color: #f7c08a;
@@ -107,6 +107,9 @@ p{
 }
 .box i{
     margin-bottom: 10px;
+}
+.clr{
+    clear: both;
 }
 
 
@@ -157,6 +160,13 @@ p{
     padding-bottom: 20px;
 }
 
+
+#main-footer{
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
 
 
 
