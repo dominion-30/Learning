@@ -101,9 +101,10 @@ p{
 .box{
     width: 33.3%;
     padding: 50px;
-    margin-top: 20px 0;
+   
     float: left;
     text-align: center;
+   
 }
 .box i{
     margin-bottom: 10px;
@@ -111,6 +112,7 @@ p{
 .clr{
     clear: both;
 }
+
 
 
 
