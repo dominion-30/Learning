@@ -118,35 +118,38 @@ h1,h2,h3{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 600px;
+    padding-top: 40px;
 }
 
 .box{
-    padding: 50px;
+  
+    padding: 20px;
     margin-bottom: 10px;
     border: none;
     text-align: center;
     margin-bottom: 40px;
+    overflow: auto;
 
 }
 
-#testimonials img{
+#testimonials .box img{
     width: 100px;
     height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    
    
 }
 .container h3{
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
+    padding-bottom: 40px;
+    text-align: center;
 }
-.box img, .box p{
-    
-    float: left;
-    width: 50%;
 
-   
-}
 /* 
 .box p{
     width: 50%;
