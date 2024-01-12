@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to use the CSS view port height and view port width">
+    <meta name="keywords" content="CSS, viewport height, viewport width">
+    <title>vh & vw units</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header{
+            background-color: #333;
+            color: #444;
+            height: 100vh;
+            background-image: url('https://source.unsplash.com/daily');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            padding:2rem ;
+            padding-top: 15rem;
+            
+        }
+       
+        header h1{
+            font-size: 3rem;
+        }
+        header p{
+            margin: 1rem 0;
+        }
+
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: #d1cdcd;
+        }
+
+        section{
+            padding: 2rem;
+        }
+
+        @media(max-height:450px){
+            header{
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti provident quaerat temporibus porro suscipit?</p>
+        <a href="#" class="btn">Find Out More</a>
+    </header>
+    <section>
+        <h3>About Our Company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi exercitationem dolorem quia doloremque magni voluptatum non totam culpa, beatae earum deleniti placeat illum, ex cum asperiores, nemo voluptatibus incidunt. Illum ut eos dolorum delectus animi praesentium consequatur ipsum sint totam. Veniam odit fuga quod dolore assumenda hic cumque, qui similique.</p>
+    </section>
+   
+    
+</body>
+</html>
