@@ -1,0 +1,90 @@
+*{
+    border:0;
+    margin: 0;
+}
+
+
+/* Utility class */
+
+html, body{
+    
+   
+}
+
+#navbar{
+    text-align: center;
+    background-image: url("../image_resources/home/showcase.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.95;
+   
+    
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: greenyellow;
+  
+
+}
+.logo{
+    
+   
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+.logo span{
+    color: greenyellow;
+}
+a{
+    color: #444;
+    text-decoration: none;
+}
+#navbar ul{
+    list-style-type: none;
+}
+
+#navbar ul li{
+    display: inline-block;
+   
+    
+}
+
+#navbar ul li a{
+    
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 1.3rem;
+  
+    color: #fff;
+    
+}
+
+#navbar h3, #navbar p{
+    color: #fff;
+}
+
+#navbar h3{
+    
+    margin-top: 150px;
+    font-size: 3rem;
+}
+
+#navbar p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
