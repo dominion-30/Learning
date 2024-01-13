@@ -11,6 +11,23 @@ html, body{
    
 }
 
+.box{
+    border: 1px solid #fafafa;
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+.box i, .box p{
+    padding: 20px 0;
+    color: #444;
+}
+
+.large-text{
+    font-size: 3.5rem;
+    line-height: 3rem;
+    padding: 20px;
+}
+
 #navbar{
     text-align: center;
     background-image: url("../image_resources/home/showcase.jpg");
@@ -22,6 +39,7 @@ html, body{
    
     
 }
+
 
 
 .btn{
@@ -84,6 +102,49 @@ a{
     text-align: center;
 }
 
+#people img{
+    width: 100%;
+    
+}
+
+#bespoke{
+    background-color: yellowgreen;
+    color: #fff;
+   
+}
+
+
+#bespoke p, #case p{
+    font-size: 1.6rem;
+    padding:5px 15px;
+    line-height: 1.2rem;
+    
+}
+
+#bespoke a{
+    margin-left: 20px;
+}
+
+#case{
+    background-color: #f4f4f4;
+    text-align: center;
+   
+   
+}
+
+#case .case-img{
+    width: 80%;
+    display:block;
+    margin:10px auto;
+    
+    
+}
+
+#case .case-img img{
+    
+    width: 100%;
+    
+}
 
 
 
