@@ -11,6 +11,7 @@ body{
     background-color: #fff;
     color: #333;
     line-height: 1.6;
+    
 }
 ul{
     list-style-type: none;
@@ -163,9 +164,7 @@ img{
     padding: 4px;
     height: 40px;
     border: #f5f5f5 1px solid;
-}
-
-.callback-form input:focus{
+}eight: ;put:focus{
     /* outline: 0; */
     outline-color: #28a745;
 }
@@ -192,4 +191,33 @@ height: 100px;
 }
 .footer .social > *{
     margin-right: 30px;
+}
+
+/* mobile */
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+        
+    }
+
+    .navbar a{
+        padding: 10px 10px;
+        margin: 0 3px;
+
+    }
+    .flex-items{
+        flex-direction: column;
+    }
+
+    .flex-columns .column, .flex-grid .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img{
+        width: 70%;
+    }
 }
