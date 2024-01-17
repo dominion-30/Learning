@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to target verious element in HTML and style them with CSS">
+    <meta name="keywords" content="HTML, CSS, selectors">
+    <title>Targeted Selectors</title>
+    <style>
+        /* selector targeting all the paragraphs in the div */
+        /* div p{
+            background: #ddd;
+        } */
+        /* Direct child */
+        div > p{
+            background-color: #ddd;
+        }
+
+        /* directly after */
+        div + p{
+            background-color: #333;
+            color: #fff;
+        }
+        /* attribute */
+        a[target]{
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        /* specific attribute values */
+        /* input{
+            width: 100%;
+            margin-bottom: 5px
+        } */
+
+        input[type="text"], 
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 5px
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li><p>Item 2</p></li>
+            <li>Item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sunt?
+        </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vero?</p>
+
+
+    <a href="#">Page 1</a> <a href="#" >Page 2</a> <a href="http://google.com" target="_blank">Google</a>
+
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

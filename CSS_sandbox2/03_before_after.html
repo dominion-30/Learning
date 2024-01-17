@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        .is-required:after{
+            content:"*" ;
+            color:red;
+            padding-left:2px ;
+
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+           
+
+        }
+        header::before{
+            content: "";
+
+            background-image: url("https://source.unsplash.com/a-man-is-walking-through-a-narrow-canyon-9Jgo0Ix_TRw");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+        header > h1{
+            font-size: 4rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, animi.</p>
+    </header>
+    
+    <section>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem optio nam soluta unde? Voluptates fugit, veniam sint optio aliquam autem nobis magni, libero eligendi, et consequatur fuga ducimus rem ullam.</p>
+    </section>
+    <!-- <label class="is-required" for="name">Name</label>
+    <input type="text" name="name" id=""> -->
+    
+</body>
+</html>
