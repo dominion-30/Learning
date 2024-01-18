@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to use CSS variables or custom properties as it might sometimes be called">
+    <meta name="keywords" content="HTML, CSS, Variables, Custom properties">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --light-color:#f4f4f4;
+
+            --primary-color:steelblue;
+            --secondary-color:skyblue;
+
+            --max-width:1100px;
+            --box-1-width:1;
+            --box-2-width:2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background-color: var(--light-color);
+        }
+
+        header{
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            border-bottom: 5px var(--secondary-color) solid;
+        }
+
+        .container{
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+        }
+
+        .box{
+            padding: 20px;
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            margin: 1rem;
+            color: #fff;
+
+        }
+
+        .box-1{
+            flex: var(--box-1-width);
+        }
+        .box-2{
+            flex: var(--box-2-width);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora! Dolore, illum! Eos, numquam blanditiis.</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora! Dolore, illum! Eos, numquam blanditiis.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

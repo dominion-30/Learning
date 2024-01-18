@@ -16,12 +16,26 @@
             margin: 1rem;
             background-color: coral;
             color: #fff;
-/* offset-x, offset-y, color */
+            /* offset-x, offset-y, color */
             box-shadow: 10px 10px teal;
 
             /* offset-x, offset-y, blur radius, color */
 
             box-shadow: 10px 10px 20px teal;
+
+            /* offset using negative values, this would changes the direction */
+            box-shadow: -10px -10px 20px teal;
+            /* offset-x, offset-y, blur-radius, spread-radius, color*/
+
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.5);
+
+            /* Inset */
+
+             /* offset-x, offset-y, blur-radius, spread-radius, color*/
+            box-shadow: inset 3px 3px teal;
+
+            /* Multiple Shadow */
+            box-shadow: 3px 3px teal, -3px -3px olive;
         }
 
     </style>
