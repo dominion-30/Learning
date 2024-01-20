@@ -25,7 +25,7 @@ header{
     height: 100vh;
    
 }
-header .content> h1{
+header .content > h1{
     /* transition-property: all;
     transition-duration: 5s;
     transition-timing-function: ease;
@@ -33,6 +33,12 @@ header .content> h1{
    
     font-size: 3rem;
     color: var(--light-text);
+    
+    
+}
+section .content > h1{
+    margin: 20px 0;
+
 }
 
 header .content> p{
@@ -59,12 +65,21 @@ a{
 
 
 }
-#page-2 .btn{
+.btn-container{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    margin-top: 30px;
+    
+
+}
+.btn-dark{
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--btn-bg);
+    background-color: var(--btn-text);
+    margin-right: 20px;
     
 }
+
 
 
 
