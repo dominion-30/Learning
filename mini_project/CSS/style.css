@@ -4,11 +4,17 @@
     --max-width: 1200px;
     --btn-bg:#f4f4f4;
     --btn-text:#444;
+    --page-2-color:tan;
+    --page-3-color:teal;
+    --page-4-color:slateblue;
+    --animate-speed: 1s;
+    
 }
 
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -16,7 +22,19 @@ header{
     background-color: var(--home-bg);
     
 }
+body{
+    overflow: hidden;
+}
+#page-2{
+    background-color: var(--page-2-color);
+}
+#page-3{
+    background-color: var(--page-3-color);
+}
 
+#page-4{
+    background-color: var(--page-4-color);
+}
 .content{
     display: flex;
     flex-direction: column;
@@ -26,15 +44,22 @@ header{
    
 }
 header .content > h1{
-    /* transition-property: all;
-    transition-duration: 5s;
-    transition-timing-function: ease;
-    transform: translateY(-30px);     */
+    animation-name: top-center;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
    
     font-size: 3rem;
     color: var(--light-text);
     
     
+}
+@keyframes top-center{
+    0%{
+        transform: translateY(-250px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 section .content > h1{
     margin: 20px 0;
@@ -42,15 +67,32 @@ section .content > h1{
 }
 
 header .content> p{
+    animation-name: left-center;
+    padding: 20px;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    color: var(--light-text);
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    
+    
+}
+@keyframes left-center{
+    0%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+section .content> p{
     padding: 20px;
     margin: 0 20px;
     font-size: 1.2rem;
     color: var(--light-text);
 
-    animation-name: top-down;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+    
 }
 
 /* Utility classes */
@@ -62,8 +104,17 @@ a{
     padding: 10px 20px;
     color: var(--btn-text);
     background-color: var(--btn-bg);
+    transition: all 0.3s ease;
 
 
+}
+.btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+.btn-dark:hover{
+    background-color: var(--btn-bg);
+    color: #444;
 }
 .btn-container{
     display: flex;
@@ -77,6 +128,7 @@ a{
     color: var(--btn-bg);
     background-color: var(--btn-text);
     margin-right: 20px;
+    /* margin-top: 30px; */
     
 }
 
