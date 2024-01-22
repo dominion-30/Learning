@@ -45,17 +45,19 @@ body{
 }
 header .content > h1{
     animation-name: top-center;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
    
     font-size: 3rem;
     color: var(--light-text);
     
     
+    
 }
 @keyframes top-center{
     0%{
-        transform: translateY(-250px);
+        transform: translateY(-1200px);
     }
     100%{
         transform: translateY(0px);
@@ -67,22 +69,29 @@ section .content > h1{
 }
 
 header .content> p{
-    animation-name: left-center;
+    
     padding: 20px;
     margin: 0 20px;
     font-size: 1.2rem;
     color: var(--light-text);
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
+    
     
     
 }
+
+#page-1 p{
+    animation-name: left-center;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    transform: translateX(-2000px);
+    animation-fill-mode: forwards;
+
+}
 @keyframes left-center{
-    0%{
-        transform: translateX(-2000px);
-    }
-    100%{
-        transform: translateX(0px);
+  
+    to{
+        transform: translateX(0);
     }
 }
 

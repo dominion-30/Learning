@@ -1,0 +1,30 @@
+/* body{
+    background-color: yellow;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+header::before{
+    
+    content: " ";
+    background-image: url('https://source.unsplash.com/a-city-street-with-cars-parked-on-the-side-of-it-OhfpeDsarFQ');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+}
+header h1{
+    padding: 20px;
+    font-size: 3rem;
+    
+}
