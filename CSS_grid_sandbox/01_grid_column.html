@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to use CSS grid for layout">
+    <meta name="keywords" content="HTML, CSS, layout, styling, Grid">
+    <title>Grid Column</title>
+    <style>
+        .grid{
+            display: grid;
+            /* if I wanted the middle column to grow so that they cover the width */
+            /* grid-template-columns: 200px auto 200px; */
+             /* if I wanted the all column to grow so that they cover the width */
+             /* grid-template-columns: auto auto auto; */
+
+             /* to repeat without writing multiple times */
+             grid-template-columns: repeat(3, auto);
+
+             /* Note grid uses fraction, this is similar to the flex in flexbox */
+             grid-template-columns: 1fr 1fr 1fr;
+             grid-template-columns: 1fr 2fr 3fr;
+             grid-template-columns: repeat(3, 1fr);
+
+             grid-gap:1rem;
+        }
+
+        .item{
+            padding: 3rem;
+            border: #ccc 1px solid;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        
+
+    </div>
+
+    
+    <main>
+        <section>
+            <h3>Welcome To My Site</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, provident? Corporis quia modi dolores? Autem vero voluptates, pariatur consequuntur eveniet vitae aliquid mollitia assumenda, reiciendis eaque odio velit delectus. Suscipit perspiciatis aspernatur cupiditate numquam omnis inventore nisi odit odio, officia doloremque nihil, eveniet magnam repellendus reiciendis autem, nobis deleniti reprehenderit?</p>
+        </section>
+
+        <aside>
+            <h3>Hello</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ea id fugit reprehenderit doloremque culpa nesciunt voluptatum numquam vel impedit perspiciatis quaerat, corrupti quam, provident nihil dignissimos, quia dicta quas!</p>
+        </aside>
+    </main>
+    
+</body>
+</html>
