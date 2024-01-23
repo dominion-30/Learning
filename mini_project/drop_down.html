@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to implement a drop down menu navigation">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Menu, drop_down">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="drop_down_style.css">
+
+    <title>Drop Down Menu</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>Services<i class="fas fa-chevron-down"></i>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Mobile Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+            
+            <li>Blog<i class="fas fa-chevron-down"></i>
+                <ul class="show">
+                    <li><a href="#">HTML</a> <span>22 posts</span></li>
+                    <li><a href="#">CSS</a> <span>37 posts</span></li>
+                    <li><a href="#">JavaScript</a> <span>60 posts</span></li>
+                    <li><a href="#">Python</a> <span>90 posts</span></li>
+                    <li><a href="#">PHP</a> <span>70 posts</span></li>
+                    <li><a href="#">Design</a><span>50 posts</span></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
