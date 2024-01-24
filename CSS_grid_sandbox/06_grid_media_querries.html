@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website demonstrates how to use media querries with Grid for layout">
+    <meta name="keyword" content="HTML, CSS, Grid, layout, media-querries">
+    <title>Media Querries</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+        }
+
+        @media(max-width:768px){
+
+            .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            }
+
+
+        }
+
+    @media(max-width:500px){
+
+
+        .grid{
+
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            grid-gap: 1rem;
+            }
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda. Deserunt dolor eligendi ex voluptatibus?</p>
+        </div>
+
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda. Deserunt dolor eligendi ex voluptatibus?</p>
+        </div>
+
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda. Deserunt dolor eligendi ex voluptatibus?</p>
+        </div>
+
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda. Deserunt dolor eligendi ex voluptatibus?</p>
+        </div>
+    </div>
+</body>
+</html>
