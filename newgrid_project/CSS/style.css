@@ -4,18 +4,23 @@
     box-sizing: border-box;
 }
 
-header{
+body{
     background-color: #f4f4f4;
     
 }
 
+.container{
+    max-width:900px;
+    margin: 0 auto;
+
+}
 #navbar{
     display: flex;
     
-    max-width:1200px;
+    
     justify-content: space-between;
     padding: 8px 0px;
-    margin: 0 auto;
+    
     
    
 }
@@ -59,3 +64,41 @@ a{
     color: #fff;
     background-color: red;
 }
+
+/* showcase */
+.text-orange{
+    color:#fff;
+    background-color: orange;
+    padding: 5px 10px;
+    
+}
+#showcase{
+    background-image: url("../img/featured.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+
+.showcase-content{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    
+}
+.showcase-content h2, .showcase-content p{
+    color: #fff;
+}
+.showcase-content h2{
+    font-size: 1.6rem;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.showcase-content p{
+    font-size: 18px;
+}
+
