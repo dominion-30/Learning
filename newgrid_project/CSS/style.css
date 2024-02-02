@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #navbar .logo img{
     
-    width: 30%;
+    width: 180px
 }
 
 .card{
@@ -92,6 +92,9 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
 }
 
+.lheading{
+    font-size: 3rem;
+}
 
 /* social media */
 
@@ -109,7 +112,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #navbar ul li a{
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 10px;
     color: #444;
@@ -209,6 +212,9 @@ h1,h2,h3,h4,h5,h6{
     
 
 }
+p{
+    margin: 0.5rem 0;
+}
 
 #home-articles .articles-container > *:first-child, 
 #home-articles .articles-container > *:last-child{
@@ -221,7 +227,7 @@ h1,h2,h3,h4,h5,h6{
 
 #home-articles .articles-container > *:last-child{
     grid-column-start: 2;
- grid-column-end: 4;
+    grid-column-end: 4;
 }
 .bg-dark{
     background-color: var(--dark-color);
@@ -278,11 +284,80 @@ h1,h2,h3,h4,h5,h6{
 .main-footer{
     
     background-color: var(--dark-color);
+    color: #fff;
 }
 
-.grid{
+.main-footer img{
+    width: 50%;
+}
+
+.footer-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     align-items: center;
 }
+.footer-container ul{
+    list-style-type: none;
+}
+.footer-container a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.footer-container > *:last-child{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid #444;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+}
+
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+}
+
+#article .meta .category{
+    margin-top: 0.4rem;
+}
+.footer-container input[type="email"]{
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-container input[type="submit"]{
+    width:90%;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+    list-style-type: none;
+}
+
+.list li a:hover{
+    color: var(--primary-color);
+}
+
+.page-container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+    margin: 2rem 0;
+    
+}
+
+.page-container > *:first-child{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+
