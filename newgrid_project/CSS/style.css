@@ -210,3 +210,79 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+#home-articles .articles-container > *:first-child, 
+#home-articles .articles-container > *:last-child{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-gap: 1rem;
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+#home-articles .articles-container > *:last-child{
+    grid-column-start: 2;
+ grid-column-end: 4;
+}
+.bg-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.bg-secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.py-1{
+    padding: 1.5rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1.5rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a{
+    color: #fff;
+
+}
+
+/* footer */
+
+.main-footer{
+    
+    background-color: var(--dark-color);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
