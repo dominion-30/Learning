@@ -51,3 +51,32 @@ a {
         color: coral;
     }
 }
+
+
+%btn-shared{
+    padding: 0.7rem 2rem;
+    display: inline;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+   
+}
+
+.btn{
+
+    &-light{
+        @extend %btn-shared;
+        background-color:$light-color;
+        color: #333;
+
+    }
+
+
+    &-dark{
+        @extend %btn-shared;
+        background-color: $dark-color;
+        color: #fff;
+    }
+    
+}
