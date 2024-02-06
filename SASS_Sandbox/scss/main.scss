@@ -1,4 +1,5 @@
 @import"variables";
+@import"functions";
 
 *{
     margin:0;
@@ -6,13 +7,13 @@
 }
 body{
     background-color: $light-color;
-    color: $dark-color;
+    color:set-text-color($light-color);;
     font-family: $font-stack;
 }
 
 header{
-    background-color: $dark-color;
-    color: $light-color;
+    background-color: $light-color;
+    color: set-text-color($light-color);
     padding: 1rem;
 
     h1{
@@ -26,15 +27,18 @@ header{
     h3{
         font-size: 2rem;
     }
+    p{
+        margin-bottom: 1.5rem;
+    }
 
     &-a{
         background-color: $primary-color;
-        color: #fff;
+        color: set-text-color($primary-color);;
     }
 
     &-b{
         background-color: $secondary-color;
-        color: #fff;
+        color:set-text-color($secondary-color);;
     }
    
 
@@ -42,15 +46,7 @@ header{
 
 }
 
-a {
-    color: #333;
-    text-decoration: none;
 
-
-    &:hover{
-        color: coral;
-    }
-}
 
 
 %btn-shared{
@@ -68,15 +64,29 @@ a {
     &-light{
         @extend %btn-shared;
         background-color:$light-color;
-        color: #333;
+        color: set-text-color($light-color);
 
+        &:hover{
+            @include transform(rotate(20deg));
+            
+        }
+        
     }
+   
 
 
     &-dark{
         @extend %btn-shared;
         background-color: $dark-color;
-        color: #fff;
+        color: set-text-color($dark-color);
+
+
+
+        &:hover{
+            @include transform(rotate(-20deg));
+            
+        }
     }
     
 }
+

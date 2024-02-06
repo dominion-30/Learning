@@ -4,12 +4,12 @@
 
 body {
   background-color: #f4f4f4;
-  color: #333;
+  color: #000;
   font-family: Arial, Helvetica, sans-serif; }
 
 header {
-  background-color: #333;
-  color: #f4f4f4;
+  background-color: #f4f4f4;
+  color: #000;
   padding: 1rem; }
   header h1 {
     text-align: center; }
@@ -18,18 +18,14 @@ header {
   padding: 3rem; }
   .section h3 {
     font-size: 2rem; }
+  .section p {
+    margin-bottom: 1.5rem; }
   .section-a {
     background-color: steelblue;
     color: #fff; }
   .section-b {
     background-color: skyblue;
-    color: #fff; }
-
-a {
-  color: #333;
-  text-decoration: none; }
-  a:hover {
-    color: coral; }
+    color: #000; }
 
 .btn-light, .btn-dark {
   padding: 0.7rem 2rem;
@@ -41,8 +37,12 @@ a {
 
 .btn-light {
   background-color: #f4f4f4;
-  color: #333; }
+  color: #000; }
+  .btn-light:hover {
+    transform: rotate(20deg); }
 
 .btn-dark {
   background-color: #333;
   color: #fff; }
+  .btn-dark:hover {
+    transform: rotate(-20deg); }
