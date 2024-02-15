@@ -63,4 +63,33 @@ const d = 7; e = 8; f = 9;
 
 console.log(d,e,f);
 
+// string
+
+const firstName2 = "Anna";
+
+// number
+const age2 = 30;
+const temp = 3.142;
+
+// boolean
+const hasKids = true;
+
+// null
+
+const aptNumber = null;
+
+// Reference type
+// array
+const arr = [1,2,3,4];
+
+// object
+const obj = {name: "Ayo"};
+// function
+
+function sayHello(){
+    console.log("hello");
+}
+const output = sayHello ;
+console.log(output, typeof output);
+
 
