@@ -1,95 +1,118 @@
-//This is a single line of code
+//  ways to declare a variable
+// var, let, const
 
-// console.log(50);
 
-const x = 5000;
-// console.log(x);
-// This is using a single line comment for multiline
-// console.log(20);
-// console.log(40);
-// console.log(50);
+// let firstName = "John";
+// let lastName = "Doe";
 
-/*
-This is a multiline comment
-console.log(50);
-console.log(70);
-console.log(5000);
-*/
+// console.log(firstName, lastName);
 
-// ways to declare a variable
-/* var
-let and const*/
+// var age = 30;
 
-let firstName = "John";
-let lastName = "Doe";
-console.log(firstName, lastName);
+// console.log(age);
 
-let age = 30;
-console.log(age);
+// Reassigning variables
 
-age = 31;
+// age = 25;
+// console.log(age);
 
-console.log(age);
+// // Declare a variable.
 
-let score;
+// let score;
 
-score = 1;
+// score = 1;
 
-console.log(score);
+// console.log(score);
 
-if(true){
-    score = score + 1;
-}
+// if(true){
+//     score = score + 1;
+// }
 
-console.log(score);
-console.log(score);
+// console.log(score);
 
-// alert(firstName);
-// alert(lastName);
+// const num = 5;
 
-const num = 5;
+// console.log(num);
 
-// num = 5;
-console.log(num);
+// const arr = [1,2,3,4];
+// console.log(arr);
 
-let a, b, c;
-console.log(a);
-a =1;
-b = 2;
-c = 3;
+// arr.push(5);
+// console.log(arr);
 
-console.log(a);
-const d = 7; e = 8; f = 9;
+// Declare multiple variables at the same time
 
-console.log(d,e,f);
+// let a,b,c;
 
-// string
+// a = 2;
+// b = 3;
+// c = 4;
 
-const firstName2 = "Anna";
+// console.log(a,b,c);
 
-// number
-const age2 = 30;
-const temp = 3.142;
+// const d = 500; const f = 600; const g = 800;
+// console.log(d,f,g);
 
-// boolean
-const hasKids = true;
+const firstName = "Sara";
 
-// null
+// Number
+// const age = 30;
+const temp = 98.999
 
+// Boolean
+const haskids = true;
+
+// Null 
 const aptNumber = null;
 
-// Reference type
-// array
-const arr = [1,2,3,4];
+// undefined;
+// let score;
+// const score = undefined
 
-// object
-const obj = {name: "Ayo"};
-// function
+// symbol
+// const id = Symbol("id");
 
-function sayHello(){
-    console.log("hello");
+// BigInt
+// const num = 123456789111213141516171819n;
+
+// Reference types
+// Array
+
+// const number = [1,2,3,4,5,6]
+
+// function sayHello(){
+//     console.log("Hello");
+// }
+
+// const output = sayHello;
+
+
+
+// console.log(output, typeof output);
+
+// Theses values are stored on the stack
+const name = "John";
+const age = 30;
+
+// Reference values are stored on the heap
+
+const person = {
+    name: "Brad",
+    age: 40
 }
-const output = sayHello ;
-console.log(output, typeof output);
+
+let newName = name;
+
+newName = "Johnathan";
+
+console.log(name , newName);
+
+let newPerson = person;
+console.log(newPerson, person);
+
+newPerson.name = "Ayo";
+
+console.log(person, newPerson);
+
 
 
