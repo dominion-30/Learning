@@ -91,28 +91,117 @@ const aptNumber = null;
 // console.log(output, typeof output);
 
 // Theses values are stored on the stack
-const name = "John";
-const age = 30;
+// const name = "John";
+// const age = 30;
 
 // Reference values are stored on the heap
 
-const person = {
-    name: "Brad",
-    age: 40
-}
+// const person = {
+//     name: "Brad",
+//     age: 40
+// }
 
-let newName = name;
+// let newName = name;
 
-newName = "Johnathan";
+// newName = "Johnathan";
 
-console.log(name , newName);
+// console.log(name , newName);
 
-let newPerson = person;
-console.log(newPerson, person);
+// let newPerson = person;
+// console.log(newPerson, person);
 
-newPerson.name = "Ayo";
+// newPerson.name = "Ayo";
 
-console.log(person, newPerson);
+// console.log(person, newPerson);
+
+// Type conversion
+let amount = "hello";
+
+console.log(amount, typeof amount);
+
+// Convert string to number
+
+// amount = parseInt(amount);
+// using the unary operator
+// amount = +amount;
+// Using the number constructor
+// amount = Number(amount);
+
+// Convert number to string
+// Using the toString method
+// amount = amount.toString();
+
+// Using the string constructor
+// amount = String(amount);
+
+// Convert string to decimal
+// amount = parseFloat(amount);
+
+// convert number to boolean
+
+// amount = Boolean(amount);
+
+// amount = parseInt(amount);
+
+// console.log(amount, typeof amount);
+
+// Operators
+// arithemetic operators
+
+let x;
+
+x= 5 + 5;
+x= 5 - 5;
+x= 5 * 5;
+x= 5 / 5;
+x= 5 % 5;
+x= 7 % 5;
+x= 10 % 5;
+
+// Concatenation
+
+x = "Hello" + " " + "World"
+
+// Exponent
+
+x = 2**3;
+
+// Increment
+
+x = 1;
+
+// x = x + 1;
+
+// using increment operator
+// x++;
+
+// Decrement
+
+// x = x - 1;
+// x--;
+
+// assignment operator
+
+// x = 20;
+
+// x +=5;
+// x -=5;
+// x /=5;
+// x *=5;
+// x %=5;
+
+// Comparison operators
+
+// x = 2 == "2";
+x = 2 === 2;
+
+x = 2 != 2;
+
+
+console.log(x)
+
+
+
 
 
 
