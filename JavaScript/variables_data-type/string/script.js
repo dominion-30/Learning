@@ -46,3 +46,34 @@ x = s.includes("Hello");
 x =s.valueOf() 
 x =s.split("");
 console.log(x);
+
+
+// Challenge
+const myString = 'developer';
+let myNewString;
+
+// 1
+// myNewString = myString.charAt(0).toUpperCase();
+// myNewString = `${myNewString}${myString.substring(1)}`;
+// 2
+// myNewString = myString[0].toUpperCase();
+// myNewString = `${myNewString}${myString.substring(1)}`;
+// 3
+// myNewString = myString.substring(0,1).toUpperCase();
+// myNewString = `${myNewString}${myString.substring(1)}`;
+// 4
+// myNewString = myString.split("");
+// myNewString=myNewString[0].toUpperCase();
+// myNewString = `${myNewString}${myString.substring(1)}`;
+// 5
+// myNewString = myString.replace("d", "D");
+// myNewString = myNewString[0];
+// myNewString = `${myNewString}${myString.substring(1)}`;
+// 6
+myNewString = myString.slice(-(myString.length),(-(myString.length) + 1)).toUpperCase();
+myNewString = `${myNewString}${myString.substring(1)}`;
+
+
+
+
+console.log(myNewString);
