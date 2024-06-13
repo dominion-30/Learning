@@ -1,16 +1,22 @@
 console.log(100);
-console.log("Hello World");
-console.log(20, "Hello", true, false);
+console.log(typeof(100));
+console.log('hello world');
+console.log(20, "Hello World", true);
 
-const x = 500;
+const x = 100;
 console.log(x);
-console.log(x*x);
-console.log("%cHello World!", style);
 
 console.error("Alert");
 console.warn("Warning");
+console.table({name: 'Ayo', email: 'abiola_ayobamidele@yahoo.com'});
 
-console.table({name:"Ayo", email:"abiola_ayobamidele@yahoo.com"});
+console.group("Simple")
+console.log(x);
 
+console.error("Alert");
+console.warn("Warning");
+console.groupEnd()
 
-const style = "padding: 10px; background-color: #fff; color:green";
+const styles = 'padding: 10px; background-color: white; color:green;';
+
+console.log("%cHello World", styles);
