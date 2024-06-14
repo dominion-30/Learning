@@ -1,22 +1,41 @@
-// Strings
-// const firstName = "Sara";
+// string
+
+const firstName = "Sara";
 
 // Number
-// const age = 30;
-// const temp = 98.65;
+const age = 30;
+
+const temp = 98.9;
 
 // Boolean
-// const hasKids = true;
-// const haspets = false;
-// const output = haspets;
+
+const hasKids = true;
 
 // Null
-// const aptNumber = null;
 
-const number = [1,2,3,4];
+const aptNumber = null;
 
-const output = number;
+// undefined
+let score = undefined;
 
-// console.log(typeof 0);
+// symbol
+const id = Symbol(5);
+
+// Bigint
+
+const n = 9007199254740991n;
+
+
+//Reference types
+const numbers = [ 1,2,3,4] 
+
+const person = {
+    name: "Ayo",
+}
+
+function sayHello() {
+    console.log("Hello");
+}
+const output = sayHello;
 
 console.log(output, typeof output);
