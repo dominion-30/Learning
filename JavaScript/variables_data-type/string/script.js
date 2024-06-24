@@ -78,6 +78,64 @@
 
 // console.log(myNewString);
 
-const num = new Number(5);
+// const num = new Number(5);
 
-console.log(num);
+// console.log(num);
+
+
+let x;
+
+const name = "John";
+const age = 30;
+
+x = "My name is " + name + ", I am " + age + " years old";
+
+// Template literals(this uses backticks)
+x = `My name is ${name}, I am ${age} years old`
+
+// String properties and method
+
+const s = new String("Hello World");
+// let s = " Hello World"
+// x = s.length
+// x = typeof s
+
+// Access value by key
+x= s[0];
+x = s[1]
+
+// x = s.__proto__
+
+// change case
+
+x = s.toUpperCase();
+x = s.toLowerCase();
+
+// get the character at a particular index
+
+x= s.charAt(6);
+
+// to get the index of a character
+
+// x = s.indexOf("m");
+
+// substring
+
+x = s.substring(0,5);
+
+x = s.substring(0,6);
+x = s.substring(0, 5);
+x = s.slice(0,6);
+
+// x = s.slice(-11, -5);
+// x = s.length;
+x = s;
+x  = new String("                          Hello World");
+
+// x = s.trim()
+// x = x.length;
+// x = x.trim();
+
+x = x.trim();
+
+console.log(x, typeof x);
