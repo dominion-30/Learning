@@ -83,59 +83,97 @@
 // console.log(num);
 
 
-let x;
+// let x;
 
-const name = "John";
-const age = 30;
+// const name = "John";
+// const age = 30;
 
-x = "My name is " + name + ", I am " + age + " years old";
+// x = "My name is " + name + ", I am " + age + " years old";
 
-// Template literals(this uses backticks)
-x = `My name is ${name}, I am ${age} years old`
+// // Template literals(this uses backticks)
+// x = `My name is ${name}, I am ${age} years old`
 
-// String properties and method
+// // String properties and method
 
-const s = new String("Hello World");
-// let s = " Hello World"
-// x = s.length
-// x = typeof s
+// const s = new String("Hello World");
+// // let s = " Hello World"
+// // x = s.length
+// // x = typeof s
 
-// Access value by key
-x= s[0];
-x = s[1]
+// // Access value by key
+// x= s[0];
+// x = s[1]
 
-// x = s.__proto__
+// // x = s.__proto__
 
-// change case
+// // change case
 
-x = s.toUpperCase();
-x = s.toLowerCase();
+// x = s.toUpperCase();
+// x = s.toLowerCase();
 
-// get the character at a particular index
+// // get the character at a particular index
 
-x= s.charAt(6);
+// x= s.charAt(6);
 
-// to get the index of a character
+// // to get the index of a character
 
-// x = s.indexOf("m");
+// // x = s.indexOf("m");
 
-// substring
+// // substring
 
-x = s.substring(0,5);
+// x = s.substring(0,5);
 
-x = s.substring(0,6);
-x = s.substring(0, 5);
-x = s.slice(0,6);
+// x = s.substring(0,6);
+// x = s.substring(0, 5);
+// x = s.slice(0,6);
 
-// x = s.slice(-11, -5);
-// x = s.length;
-x = s;
-x  = new String("                          Hello World");
+// // x = s.slice(-11, -5);
+// // x = s.length;
+// x = s;
+// x  = new String("                          Hello World");
 
-// x = s.trim()
-// x = x.length;
+// // x = s.trim()
+// // x = x.length;
+// // x = x.trim();
+
 // x = x.trim();
 
-x = x.trim();
+// console.log(x, typeof x);
 
-console.log(x, typeof x);
+let x;
+const name  = "John";
+const age = 26;
+x = "hello my name is " + name + "I am " + age + " years old";
+
+// Template literals
+x = `hello my name is ${name}, I am ${age} years old`;
+
+// String properties and methods
+// properties do not use the parenthesis
+const s = new String("Hello World");
+x = s.length;
+// Access value by key;
+x = s[3]
+
+// methods have the prototype, this is where the functions are stored.
+x = s.__proto__
+
+// to uppercase
+x = s.toUpperCase()
+
+x = s.toLowerCase()
+
+// to get the character at a specified index
+x = s.charAt(10);
+
+// to get the index of a specified character, it returns only the first occurence of the character
+
+x = s.indexOf("d");
+
+// substring
+x = s.substring(0,5);
+
+// slice, with this you can start from the end with negative numbers
+x = s.slice(0,5);
+x = s.slice(-1);
+console.log(x);
