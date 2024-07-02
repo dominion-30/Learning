@@ -13,5 +13,10 @@ const myString = "developer";
 
 // solution 4
     
-    let myNewString = `${myString.charAt(0).toLocaleUpperCase()}${myString.substring(1)}`;
-console.log(myNewString);
+    // let myNewString = `${myString.charAt(0).toLocaleUpperCase()}${myString.substring(1)}`;
+
+    // Solution 5
+    let myNewString =` ${myString.split("")}`
+    myNewString = `${myNewString[1].toUpperCase()}${myString.slice(1)}`
+console.log( myNewString);
+
