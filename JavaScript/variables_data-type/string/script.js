@@ -175,5 +175,26 @@ x = s.substring(0,5);
 
 // slice, with this you can start from the end with negative numbers
 x = s.slice(0,5);
-x = s.slice(-1);
+x = s.slice(-11,6);
+
+// trim
+
+x = "                                               hello world "
+x= x.trim()
+// x=x.length
+
+// replace, to replace a string within a string
+
+x = s.replace("world", "John");
+
+// This return true if a string is found within a string and flase if otherwise
+
+x = s.includes("WR");
+
+// valueof gives the true primitive of a value
+x = typeof(s.valueOf());
+
+// split, returns and array of the string
+x =s.split("");
 console.log(x);
+
