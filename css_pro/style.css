@@ -64,76 +64,48 @@
     color: #00ff00;
  } */
 
-    *{
+    /* *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    } */
+
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 960px;
+        margin:40px  auto;
+        /* the issue with just using width is the responsiveness, it does not respond well to different screen sizes */
+        /* but with max-width this issue is solved */
     }
 
- .box{
-    /* background-color: #f4f4f4; */
-    border: 2px solid #777;
-    background: #f4f4f4;
-    width: 500px;
-    /* padding on all sides */
-    padding: 20px;
-    /* padding per side */
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    body{
+        line-height: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-    /* padding shorthand , top, right, bottom, left*/
-    padding: 10px 20px 30px 40px;
+    .box{
+        background: #f4f4f4;
+        border: 2px solid #333;
+        margin-bottom: 15px;
+        padding: 20px;
+        /* text-align: center; */
+    }
 
-    /* shorthand using two values */
-    padding: 10px 30px;
-    /* margin on all sides */
-    margin: 20px;
-
-    /* margin  on all sides */
-    margin: 50px;
-
-    /* padding per side */
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-
-    /* padding shorthand , top, right, bottom, left*/
-    margin: 10px 20px 30px 40px;
-
-    /* shorthand using two values */
-    margin: 10px 30px;
-
- }
-
- 
- #box-1{
-    background-color: blanchedalmond;
-    /* border-width: 3px;
-    border-color: red;
-    border-style: double; */
-    border: 3px solid red;
-    border-radius: 10px;
-
-
-    
- }
-
- #box-2{
-    background: #333;
-    color: #fff;
-    border-top: 3px solid blue;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
- }
-
- #box-3{
-    background-image: url('./img/joshua-oluwagbemiga-Jq0coU4cdFE-unsplash.jpg');
-    height: 300px;
-    width: 600px;
-    background-repeat: no-repeat;
-    background-position: 200px 50px;
-    
- }
+    .box p{
+        /* Aext Align  */
+        text-align: center;
+        text-align: justify;
+    }
+    #box-2{
+        float:left;
+        width: 68%;
+    }
+    #box-3{
+        width: 30%;
+        float: right;
+    }
+    .clr{
+        clear: both;
+    }
