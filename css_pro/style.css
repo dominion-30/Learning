@@ -110,3 +110,32 @@
         color: #f4f4f4;
         background-color: #446190;
     }
+    .side-menu{
+        list-style-type: none;
+        border: 1px #ddd solid;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+
+    }
+    .side-menu li:hover{
+        background: #333;
+    }
+    .side-menu li{
+        font-size: 18px;
+        line-height: 2.4em;
+        border-bottom: 1px dotted #ddd;
+        
+    }
+    .side-menu a{
+        color: #333;
+        text-decoration: none;
+    }
+    .side-menu a:hover{
+        
+        color: #fff;
+    }
+
+    .side-menu li:last-child{
+        border-bottom: none;
+    }
