@@ -113,7 +113,7 @@
 
 
      /* navbar */
-     .navbar{
+     /* .navbar{
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -141,9 +141,12 @@
     .navbar li a:hover{
         background: #446190;
 
-    }
+    } */
+
+
     /* side menu */
-    .side-menu{
+
+    /* .side-menu{
         list-style-type: none;
         border: 1px #ddd solid;
         border-radius: 10px;
@@ -178,4 +181,30 @@
         border-bottom: none;
     }
 
-   
+    */
+
+    /* Inline and Block Styling */
+    *{
+        box-sizing: border-box;
+    }
+    ul li{
+        display: inline;
+        
+    }
+    ul  li a {
+        padding-right:20px;
+        text-decoration: none;
+    }
+    img{
+        display: block;
+        margin: auto;
+        max-width: 300px;
+
+    }
+    .box{
+        background: #f4f4f4;
+        padding: 15px;
+        margin-bottom: 10px;
+        width: 32%;
+        display: inline-block;
+    }
