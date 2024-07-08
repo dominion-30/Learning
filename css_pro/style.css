@@ -69,7 +69,7 @@
         padding: 0;
         box-sizing: border-box;
     } */
-     body{
+     /* body{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      }
 
@@ -86,18 +86,18 @@
         color: coral;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline;
-    }
+    } */
 
     /* a:visited{
         color: red;
     } */
 
-    a:active{
+    /* a:active{
         color: rgb(71, 71, 11);
-    }
+    } */
 
     /* button styling */
-    .btn{
+    /* .btn{
         background: #4c6ca0;
         border: none;
         color: #fff;
@@ -109,18 +109,50 @@
     .btn:hover{
         color: #f4f4f4;
         background-color: #446190;
+    } */
+
+
+     /* navbar */
+     .navbar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: #4c6ca0;
+        border-radius: 5px;
+        overflow: auto;
+        
+       
+        
     }
+
+    .navbar li{
+        float: left;
+      
+      
+        
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    .navbar li a:hover{
+        background: #446190;
+
+    }
+    /* side menu */
     .side-menu{
         list-style-type: none;
         border: 1px #ddd solid;
         border-radius: 10px;
         padding: 20px;
         width: 300px;
+        background-color: #333;
 
     }
-    .side-menu li:hover{
-        background: #333;
-    }
+    
     .side-menu li{
         font-size: 18px;
         line-height: 2.4em;
@@ -128,14 +160,22 @@
         
     }
     .side-menu a{
-        color: #333;
+        color: #fff;
         text-decoration: none;
+        display: block;
+        padding: 15px 20px;
     }
     .side-menu a:hover{
         
-        color: #fff;
+        color: #333;
+     
+        background-color: #fff;
+        border-radius: 5px;
+      
     }
 
     .side-menu li:last-child{
         border-bottom: none;
     }
+
+   
