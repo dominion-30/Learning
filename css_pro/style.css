@@ -210,7 +210,7 @@
     } */
 
     /* CSS Positioning */
-    .box{
+    /* .box{
         width: 100px;
         height: 100px;
     }
@@ -254,4 +254,36 @@
     }
     body{
         height: 4000px;
+    } */
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #4c6ca0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .text{
+        text-align: center;
+    }
+    .text h3{
+        font-size: 30px;
+    }
+    .container{
+        margin: auto;
+        height: 500px;
+        width: 500px;
+        background: #fff;
+        padding: 10px 30px;
+    }
+    .container label, .container input{
+        display: block;
+       
+        
+    }
+    .container input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+       
     }
