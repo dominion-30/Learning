@@ -15,33 +15,55 @@
 // console.log(Math);
 
 // math object
-let x;
+// let x;
 // x = Math.sqrt(9);
 
-x = Math.abs(-2);
-x = Math.round(4.8);
+// x = Math.abs(-2);
+// x = Math.round(4.8);
 
 // note: the ceil method always rounds up 
 
-x = Math.ceil(4.9);
+// x = Math.ceil(4.9);
 
 // note: the floor method always rounds down
-x =Math.floor(4.9);
+// x =Math.floor(4.9);
 
-x=Math.pow(2,4);
+// x=Math.pow(2,4);
 
-x = Math.min(5,6, 2, 0, -1);
-x = Math.max(5,6, 2, 0, -1);
+// x = Math.min(5,6, 2, 0, -1);
+// x = Math.max(5,6, 2, 0, -1);
 
 // generating  random numbers between 0 and 1
-x = Math.random();
+// x = Math.random();
 
 // generate random nunbers between 0 and 9
-x = Math.random() * 10;
+// x = Math.random() * 10;
 
 // generate random nunbers between 0 and 10
-x = Math.random() * 11;
+// x = Math.random() * 11;
 
 // generate random whole nunbers between 0 and 10
-x = Math.floor( Math.random() * 11);
-console.log(x);
+// x = Math.floor( Math.random() * 11);
+// console.log(x);
+
+let x,y;
+
+x = Math.round(Math.random()*100 );
+y = Math.round(Math.random()*50 )
+console.log(x,y);
+let summation, diff, product, quot, remainder;
+
+summation = `The sum of ${x} and ${y} is ${x + y}`;
+diff = `The difference between ${x} and ${y} is ${x - y}`;
+product = `The product of ${x} and ${y} is ${x * y}`;
+quot = `The quotient of ${x} by ${y} is ${x/y}`;
+remainder = `The remainder when ${x} is divided by ${y} is ${x % y}`;
+
+console.log(summation);
+console.log(diff);
+console.log(product);
+console.log(quot);
+console.log(remainder);
+
+
+
