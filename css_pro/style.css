@@ -275,7 +275,7 @@
         
         margin: 50px auto;
         height: 600px;
-        width: 500px;
+        max-width: 500px;
         background: #fff;
         padding: 10px 30px;
     }
@@ -297,16 +297,21 @@
         background: #49c1a2;
     }
     .container .btn:hover{
-        background-color:#37a08e; ;
+        background-color:#37a08e; 
+        cursor: pointer;
+    }
+    form + div{
+        font-size: 13px;
+        
     }
     .text a{
         color: rebeccapurple
     }
     footer p{
         color: #fff;
-        text-align: center;
+        
     }
-    footer a{
+    footer .text a{
         color: #49c1a2;
     }
    
