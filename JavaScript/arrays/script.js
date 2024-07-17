@@ -52,7 +52,7 @@ const arr = [34,55,95,20,15];
 
 // array.includes
 
-let x,y;
+let x,y,z;
 // y = arr.includes(20);
 // console.log(arr);
 // y = arr.indexOf(15);
@@ -62,6 +62,10 @@ x = arr.includes(20);
 x = arr.indexOf(15);
 
 x = arr.slice(1,4 );
-x = arr.splice(1,4);
+// x = arr.splice(1,4);
+// x = arr.splice(3,1);
+// z = arr.splice(1,4).reverse().toString().length
+x = arr.splice(1,4).reverse().toString().charAt(2);
+
 
 console.log(x, arr);
