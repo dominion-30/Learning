@@ -27,4 +27,7 @@ x = `my favourite fruit is an ${fruits[1]}`
 x = numbers.length;
 x = fruits[0] = "grape";
 x = fruits.length = 4;
+
+x = fruits[4] = "Strawberry";
+x = fruits[fruits.length] = "Mango";
 console.log(x, fruits);
