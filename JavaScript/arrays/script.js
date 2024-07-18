@@ -148,10 +148,31 @@ const person = {
         city:"Boston",
         state:"MA",
     },
+    hobbies:["sports","cycling","programming","cooking", "driving"],
 
 };
 x = person.name;
 x = person["name"];
-x = person.address.street;
+x = person.address.state;
+x=  person["address"]["state"]
+x = person.hobbies[0];
+
+// update name property
+person.name = "Jane Doe";
+x = person;
+person.isAdmin = false;
+x = person;
+
+// delete/remove a property from the object literal
+delete person['age'];
+
+// adding a function to an object literal
+
+person.greet = function(){
+    console.log(`Hello, my name is ${this.name}`);
+}
+
+x = person.greet();
+x= person;
 
 console.log(x);
