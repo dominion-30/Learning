@@ -32,7 +32,7 @@
 // x = fruits[fruits.length] = "Mango";
 // console.log(x, fruits);
 
-const arr = [34,55,95,20,15];
+// const arr = [34,55,95,20,15];
 // arr.push(45); /*add an element to the end of the array*/
 // let x = [8,9,10]
 // arr.push([4,5,6], x);
@@ -52,20 +52,56 @@ const arr = [34,55,95,20,15];
 
 // array.includes
 
-let x,y,z;
+// let x,y,z;
 // y = arr.includes(20);
 // console.log(arr);
 // y = arr.indexOf(15);
-y = `Array arr = ${arr}`;
-console.log(y);
-x = arr.includes(20);
-x = arr.indexOf(15);
+// y = `Array arr = ${arr}`;
+// console.log(y);
+// x = arr.includes(20);
+// x = arr.indexOf(15);
 
-x = arr.slice(1,4 );
+// x = arr.slice(1,4 );
 // x = arr.splice(1,4);
 // x = arr.splice(3,1);
 // z = arr.splice(1,4).reverse().toString().length
-x = arr.splice(1,4).reverse().toString().charAt(2);
+// x = arr.splice(1,4).reverse().toString().charAt(2);
 
 
-console.log(x, arr);
+// console.log(x, arr);\\\
+
+let x;
+const fruits = ["apple","pear", "orange"];
+
+const berries = ["strawberry", "blueberry", "rasberry"];
+
+// x = fruits.push(berries);
+x = fruits[fruits.length-1][1];
+
+const allFruits = [fruits, berries];
+x = allFruits;
+x = allFruits[1][0];
+
+x = fruits.concat(berries)
+
+// Spread operator (...)
+
+x = [...  fruits, ... berries];
+
+// Flatten array
+
+
+const arr= [1,2,[3,4],5,[6,7], 8];
+x = arr.flat();
+
+// Static methods on array Objects
+
+x = Array.isArray();
+
+x = Array.from("12345678");
+
+const a = 1;
+const b = 2;
+const c = 3;
+x = Array.of(a,b,c)
+console.log( x);
