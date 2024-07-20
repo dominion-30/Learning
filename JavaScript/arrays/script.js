@@ -253,6 +253,9 @@ const todos = [{
     // getting the length of an object cannot be done using the  length on the object, we first get the keys, then apply length on the returned array.
 
     x = Object.keys(todo).length;
+    x = Object.values(todo).length;
+    x = Object.entries(todo);
+    x = todo.hasOwnProperty("age");
 console.log(x, typeof x);
 
 // method 2
