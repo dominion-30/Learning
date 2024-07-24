@@ -211,54 +211,107 @@
 
 // x = obj3;
 // console.log(x);
-let x;
-const todo = {};
-todo.id = 1;
-todo.name = "Buy Milk";
-todo.completed = false;
-x = todo;
+// let x;
+// const todo = {};
+// todo.id = 1;
+// todo.name = "Buy Milk";
+// todo.completed = false;
+// x = todo;
 
-const person = {
-    coordinates:{
-        lat:42.9384,
-        lng:-71.3232,
-    }
-};
-x = person["coordinates"]["lat"];
-x = person.coordinates.lng;
+// const person = {
+//     coordinates:{
+//         lat:42.9384,
+//         lng:-71.3232,
+//     }
+// };
+// x = person["coordinates"]["lat"];
+// x = person.coordinates.lng;
 
-const obj1 = {a:1, b:2};
-const obj2 = {c:3, d:4};
-const obj3 = {...obj1, ...obj2};
-const obj5 = {numbers:[5,3,6,9,7], two:2};
+// const obj1 = {a:1, b:2};
+// const obj2 = {c:3, d:4};
+// const obj3 = {...obj1, ...obj2};
+// const obj5 = {numbers:[5,3,6,9,7], two:2};
 
-x = obj3;
+// x = obj3;
 
-const obj4 = Object.assign({}, obj3, obj5,  obj1);
-x = obj4;
+// const obj4 = Object.assign({}, obj3, obj5,  obj1);
+// x = obj4;
 
-const todos = [{
-    id:1, name:"Buy Milk"},
-    {id:2, name:"Pickup kids from school"},
-    {id:3, name:"Take out trash"}];
+// const todos = [{
+//     id:1, name:"Buy Milk"},
+//     {id:2, name:"Pickup kids from school"},
+//     {id:3, name:"Take out trash"}];
 
-    x = todos;
-    x = todos[0].name;
+//     x = todos;
+//     x = todos[0].name;
 
     // other methods available on object
 
     //  if you want to get all the keys
-    x = Object.keys(todo)
+    // x = Object.keys(todo)
 
     // getting the length of an object cannot be done using the  length on the object, we first get the keys, then apply length on the returned array.
 
-    x = Object.keys(todo).length;
-    x = Object.values(todo).length;
-    x = Object.entries(todo);
-    x = todo.hasOwnProperty("age");
-console.log(x, typeof x);
+//     x = Object.keys(todo).length;
+//     x = Object.values(todo).length;
+//     x = Object.entries(todo);
+//     x = todo.hasOwnProperty("age");
+// console.log(x, typeof x);
 
 // method 2
 // const todo1 = new Object();
 // x = todo1;
 // console.log(x, typeof x);
+
+
+const firstName = "John";
+const lastName = "Doe";
+const age = 30;
+
+
+// When both the key and value have the same variable name, there is no need to repeat as in object person1  below:
+
+// const person1 = {
+//     firstName:firstName,
+//     lastName:lastName,
+//     age:age,
+// };
+
+// console.log(person.age);
+
+
+// const person = {
+//     firstName,
+//     lastName,
+//     age
+// }
+
+// console.log(person.firstName, person.lastName, person.age);
+
+
+// Destructuring
+
+const todo = {
+    id: 1,
+    title:"Take out trash",
+    user:{
+        name:"John",
+
+    }
+    
+
+}
+
+// Renaming an id using destructuring
+// if you use curly braces you are destructuring while if you don't you are renaming
+
+
+const {id:todoId, title, user:{name}} = todo;
+
+const numbers = [23,67, 33, 49];
+
+
+const [first, second, ...rest] = numbers;
+
+
+console.log(rest);
