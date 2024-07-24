@@ -264,9 +264,9 @@
 // console.log(x, typeof x);
 
 
-const firstName = "John";
-const lastName = "Doe";
-const age = 30;
+// const firstName = "John";
+// const lastName = "Doe";
+// const age = 30;
 
 
 // When both the key and value have the same variable name, there is no need to repeat as in object person1  below:
@@ -316,31 +316,83 @@ const age = 30;
 
 // console.log(rest);
 
-const post = {
-    id:1,
-    title:"Post one",
-    body: "This is the body",
-}
+// const post = {
+//     id:1,
+//     title:"Post one",
+//     body: "This is the body",
+// }
 // Convert to JSON string
 
-const str = JSON.stringify(post) /*this turns an object to a JSON string*/
+// const str = JSON.stringify(post) /*this turns an object to a JSON string*/
 
 // Parse JSON
 // This converts an str back to an object
-const obj = JSON.parse(str);
+// const obj = JSON.parse(str);
 
-const posts = [{
+// const posts = [{
+//     id:1,
+//     title:"Post one",
+//     body: "This is the body",
+
+// },
+// {
+//     id:2,
+//     title:"Post two",
+//     body: "This is the body",
+// }]
+// const str2 = JSON.stringify(posts);
+
+// const obj2 = JSON.parse(str2);
+// console.log(obj2, typeof obj2);
+
+
+// Object Challenge
+
+const library = [{
     id:1,
-    title:"Post one",
-    body: "This is the body",
+    title:"Valkomen, and its meaning",
+    author: "Abiola Ayobamidele",
+    status:{
+        own:true,
+        reading:false,
+        read: false,
+    }
 
 },
+
 {
     id:2,
-    title:"Post two",
-    body: "This is the body",
-}]
-const str2 = JSON.stringify(posts);
+    title:"Reading, the reader and the read",
+    author: "Abiola Ayobamidele",
+    status:{
+        own:true,
+        reading:false,
+        read: false,
+    }
+   
+},
 
-const obj2 = JSON.parse(str2);
-console.log(obj2, typeof obj2);
+{
+    id:3,
+    title:"Yoruba, English, Swedish and their semilarities",
+    author: "Abiola Ayobamidele",
+    status:{
+        own:true,
+        reading:false,
+        read: false,
+    }
+
+}
+
+]
+
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+console.log(library);
+
+
+// own:"most owned booked in category 1",
+//         reading:"all time best seller in category 1",
+//         read: "all time leading read average of 1 million"
