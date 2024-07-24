@@ -291,27 +291,56 @@ const age = 30;
 
 // Destructuring
 
-const todo = {
-    id: 1,
-    title:"Take out trash",
-    user:{
-        name:"John",
+// const todo = {
+//     id: 1,
+//     title:"Take out trash",
+//     user:{
+//         name:"John",
 
-    }
+//     }
     
 
-}
+// }
 
 // Renaming an id using destructuring
 // if you use curly braces you are destructuring while if you don't you are renaming
 
 
-const {id:todoId, title, user:{name}} = todo;
+// const {id:todoId, title, user:{name}} = todo;
 
-const numbers = [23,67, 33, 49];
+// const numbers = [23,67, 33, 49];
+
+// when the ...(spread operator is used with arrays for destructuring, it is called the rest operator (...rest))
+// const [first, second, ...rest] = numbers;
 
 
-const [first, second, ...rest] = numbers;
+// console.log(rest);
 
+const post = {
+    id:1,
+    title:"Post one",
+    body: "This is the body",
+}
+// Convert to JSON string
 
-console.log(rest);
+const str = JSON.stringify(post) /*this turns an object to a JSON string*/
+
+// Parse JSON
+// This converts an str back to an object
+const obj = JSON.parse(str);
+
+const posts = [{
+    id:1,
+    title:"Post one",
+    body: "This is the body",
+
+},
+{
+    id:2,
+    title:"Post two",
+    body: "This is the body",
+}]
+const str2 = JSON.stringify(posts);
+
+const obj2 = JSON.parse(str2);
+console.log(obj2, typeof obj2);
