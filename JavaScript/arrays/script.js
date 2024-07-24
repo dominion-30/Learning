@@ -348,7 +348,7 @@
 
 // Object Challenge
 
-// solution 1
+// Step 1
 const library = [{
     id:1,
     title:"Valkomen, and its meaning",
@@ -387,7 +387,7 @@ const library = [{
 
 ]
 
-// solution 2
+// Step 2
 
 library[0].status.read = true;
 library[1].status.read = true;
@@ -395,12 +395,18 @@ library[2].status.read = true;
 
 // console.log(library);
 
-// solution 3
+// Step 3
 
 const [first] = library;
 
 const {title:firstbook} = first;
 console.log(firstbook);
+
+// Step 4
+
+const str = JSON.stringify(library);
+
+console.log(str, typeof str);
 
 
 // own:"most owned booked in category 1",
