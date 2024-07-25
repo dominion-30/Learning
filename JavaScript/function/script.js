@@ -66,3 +66,44 @@
 
 // const result = sum(1,2,3,4,10,30,100);
 // console.log(result);
+
+// Object as params
+const Users = [
+    {id:1,
+        userName:"dele",
+        status:true,
+    },
+    {id:2,
+        userName:"goodgril",
+        status:true,
+    },
+    {id:3,
+        userName:"lukas",
+        status:true,
+    }
+]
+
+function loginUser(user){
+    return `The user ${user.userName} with the id of ${user.id} is logged in`;
+}
+
+const result = loginUser(Users[1]);
+console.log(result);
+
+// let x = Users[0].userName;
+// console.log(x);
+
+
+// function that will get a random number from a specific array that we pass in
+
+function getRandom(arr){
+    const randomIndex = Math.floor(Math.random()*arr.length);
+
+   return arr[randomIndex];
+
+}
+
+arr = [1,2,3,4,5,6,7,8,9];
+
+const ans = getRandom(arr);
+console.log(ans);
