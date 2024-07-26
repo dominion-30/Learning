@@ -68,27 +68,27 @@
 // console.log(result);
 
 // Object as params
-const Users = [
-    {id:1,
-        userName:"dele",
-        status:true,
-    },
-    {id:2,
-        userName:"goodgril",
-        status:true,
-    },
-    {id:3,
-        userName:"lukas",
-        status:true,
-    }
-]
+// const Users = [
+//     {id:1,
+//         userName:"dele",
+//         status:true,
+//     },
+//     {id:2,
+//         userName:"goodgril",
+//         status:true,
+//     },
+//     {id:3,
+//         userName:"lukas",
+//         status:true,
+//     }
+// ]
 
-function loginUser(user){
-    return `The user ${user.userName} with the id of ${user.id} is logged in`;
-}
+// function loginUser(user){
+//     return `The user ${user.userName} with the id of ${user.id} is logged in`;
+// }
 
-const result = loginUser(Users[1]);
-console.log(result);
+// const result = loginUser(Users[1]);
+// console.log(result);
 
 // let x = Users[0].userName;
 // console.log(x);
@@ -96,14 +96,43 @@ console.log(result);
 
 // function that will get a random number from a specific array that we pass in
 
-function getRandom(arr){
-    const randomIndex = Math.floor(Math.random()*arr.length);
+// function getRandom(arr){
+//     const randomIndex = Math.floor(Math.random()*arr.length);
 
-   return arr[randomIndex];
+//    return arr[randomIndex];
 
+// }
+
+// arr = [1,2,3,4,5,6,7,8,9];
+
+// const ans = getRandom(arr);
+// console.log(ans);
+
+// window.alert("Hello World");
+// console.log((window));
+// console.log(window.innerWidth);
+// console.log(window.innerWidth);
+
+const x = 100;
+console.log(x, "in global scope");
+
+function run (){
+    console.log(x, "inside the function");
+    return window.innerHeight;
 }
 
-arr = [1,2,3,4,5,6,7,8,9];
+let result = run();
+console.log(result);
 
-const ans = getRandom(arr);
-console.log(ans);
+if(true){
+    console.log(x, "in block");
+}
+
+function add(){
+    const y = 50;
+    console.log(y+x);
+}
+
+add();
+
+console.log(y + x);
