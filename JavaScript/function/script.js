@@ -113,26 +113,79 @@
 // console.log(window.innerWidth);
 // console.log(window.innerWidth);
 
+
+
+// Global and function Scope
+// const x = 100;
+// console.log(x, "in global scope");
+
+// function run (){
+//     console.log(x, "inside the function");
+//     return window.innerHeight;
+// }
+
+// let result = run();
+// console.log(result);
+
+// if(true){
+//     console.log(x, "in block");
+// }
+
+// function add(){
+//     const y = 50;
+//     console.log(y+x);
+// }
+
+// add();
+
+// console.log(y + x);
+
+
+// Block Scope
+
 const x = 100;
-console.log(x, "in global scope");
 
-function run (){
-    console.log(x, "inside the function");
-    return window.innerHeight;
-}
-
-let result = run();
-console.log(result);
+// console.log(x);
 
 if(true){
-    console.log(x, "in block");
+    const y = 200;
+    console.log(x + y);
+}
+// const y = 1
+
+// console.log(x +y);
+
+for( let i = 0; i<= 10; i++){
+    console.log(i);
 }
 
-function add(){
-    const y = 50;
-    console.log(y+x);
+// console.log(i);
+
+if(true){
+    const a = 500;
+    let b = 600;
+    var c = 700;
 }
 
-add();
+// console.log(c);
+console.log("testing var");
 
-console.log(y + x);
+for(var i = 0; i<=10; i++){
+
+    console.log(i);
+
+}
+console.log(i);
+
+function running(){
+    var b = 1000;
+    console.log(b);
+}
+
+running()
+// console.log(b+ 1);
+
+var testing = 4;
+let test = 14;
+const tests = 140;
+console.log(window);
