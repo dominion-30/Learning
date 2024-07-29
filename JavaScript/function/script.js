@@ -299,13 +299,47 @@
 // console.log(createObj());
 
 
-const number = [1,2,3,4,5,6];
+// const number = [1,2,3,4,5,6];
+
+
 // number.forEach(function(n){
 //     console.log(n);
 // })
 
+/*
 number.forEach(n=>{
     console.log(n);
-})
+})*/
 
 // number.forEach(n=> console.log(n));
+
+
+
+// in order to solve this, we create an IIFE(Imediately Invoked Function Expression)
+
+// syntax of IIFE
+(function(){
+    const user = "John";
+    console.log(user);
+
+    const hello = ()=> console.log("hello from inside the IIFE");
+    hello();
+
+})();
+
+(function(a){
+    console.log(a * 2);
+
+})(4);
+
+// (function add(a,b){
+//     return a + b;
+
+// })(console.log(add(20,10)));
+
+
+
+// const hello = ()=>{
+//     console.log("hello from outside the IIFE");
+// }
+// hello();
