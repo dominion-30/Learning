@@ -343,3 +343,25 @@ number.forEach(n=>{
 //     console.log("hello from outside the IIFE");
 // }
 // hello();
+
+
+// Challenge 
+
+// Challenge 1
+// this function take Fahrenheit and converts it to celcius;
+// 180/100 + 32 celcius to fahrenheit
+// 100/180 - 32
+// function getCelsius(Fahrenheit){
+//     return ((Fahrenheit - 32) * 100/180)
+
+// }
+// const result = getCelsius(61);
+// console.log(result);
+// console.log("cel-fah", 180/100 + 32);
+// console.log("feh-cel", (100/180)-32);
+
+const getCelsius = Fahrenheit=> console.log(`The temperature of ${Fahrenheit} F is ${(Fahrenheit - 32) * (100/180)} \xB0C`);
+
+getCelsius(32);
+
+// console.log("\xB0");
