@@ -219,8 +219,93 @@
 
 // function expression
 
-const addPlusSign = function (value){
-    return "+" + value;
-}
+// const addPlusSign = function (value){
+//     return "+" + value;
+// }
 
-console.log(addPlusSign(100));
+// console.log(addPlusSign(100));
+
+// ES6 or ES2015
+
+// arrow function
+
+/*function add(a,b){
+    // console.log(a + b);
+    // return a+b;
+}*/
+
+// const result = add(1,9);
+// console.log(result);
+
+// arrow function
+// const addition =(a,b) =>{
+//     return a + b;
+// }
+
+// implicit return
+// const subtract = (a,b) => a - b;
+
+// console.log(addition(3,10));
+
+// console.log("subtraction", subtract(20,20));
+
+
+// const r =() =>{
+//  console.log("This is an arrow function");
+// }
+// r();
+
+// arrow function
+
+// function add(a,b){
+//     return a +b;
+// }
+
+// const add = function(a,b){
+//     return a +b;
+
+// }
+// console.log(add(1,2));
+
+
+// arrow function
+
+// const multiply = (c,d)=>{
+//     return c * d
+
+// }
+
+// console.log(multiply(3,9));
+
+// another way of writing this can be done using implicit return
+
+// const multiplication =(a,b)=> a*b;
+
+// console.log(multiplication(2,10), multiply(2,10));
+
+// can leave off parenthesis with a single parameter
+
+// const double = a => a * 2;
+// console.log(double(500));
+
+
+// returning an obj
+
+// const createObj = ()=> ({
+//     name:"Ayo",
+//     Gender:"Male"
+// });
+
+// console.log(createObj());
+
+
+const number = [1,2,3,4,5,6];
+// number.forEach(function(n){
+//     console.log(n);
+// })
+
+number.forEach(n=>{
+    console.log(n);
+})
+
+// number.forEach(n=> console.log(n));
