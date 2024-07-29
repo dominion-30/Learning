@@ -362,6 +362,18 @@ number.forEach(n=>{
 
 const getCelsius = Fahrenheit=> console.log(`The temperature of ${Fahrenheit} F is ${(Fahrenheit - 32) * (100/180)} \xB0C`);
 
-getCelsius(32);
+getCelsius(50);
 
+
+const minMax = (arr)=>{
+    arr = Number(arr);
+    const min = Math.min(arr);
+    const max = Math.max(arr);
+    console.log(min);
+    console.log(arr.push(min));
+
+}
 // console.log("\xB0");
+
+
+console.log(minMax[1,2,3,4,5,6]);
