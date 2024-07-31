@@ -402,9 +402,9 @@ console.log(minMax([1,2,300,4,5]));
 
 // Challenge 3
 
-(function(L,W){
+((L,W)=>{
   
     console.log(`The rectangle has a length ${L} cm and width ${W} cm. The area is ${L*W} cm^2`);
 
-})(4,2);
+})(10,5);
 
