@@ -384,10 +384,13 @@ getCelsius(50);
 const minMax = (arr) => {
     const min = Math.min(...arr);
     const max = Math.max(...arr);
-    return [min, max];
+    return {
+        min,
+        max,
+    }
 }
 
-console.log(minMax([2,1]));
+console.log(minMax([1,2,300,4,5]));
 
 // console.log(minMax([1,2,3,4,5,6,7,8,9]));
 
@@ -396,3 +399,12 @@ console.log(minMax([2,1]));
 
 // console.log(...arr);
 // console.log(Math.max(arr.entries));
+
+// Challenge 3
+
+(function(L,W){
+  
+    console.log(`The rectangle has a length ${L} cm and width ${W} cm. The area is ${L*W} cm^2`);
+
+})(4,2);
+
