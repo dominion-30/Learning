@@ -365,15 +365,34 @@ const getCelsius = Fahrenheit=> console.log(`The temperature of ${Fahrenheit} F 
 getCelsius(50);
 
 
-const minMax = (arr)=>{
-    arr = Number(arr);
-    const min = Math.min(arr);
-    const max = Math.max(arr);
-    console.log(min);
-    console.log(arr.push(min));
+// Challenge 2
 
-}
+// const minMax = (arr)=>{
+    
+//     const min = Math.min(...arr);
+//     const max = Math.max(...arr);
+//     // const result = [min,max];
+//     const result = [];
+//     result.push(max, min);
+//     return result;
+
+// }
 // console.log("\xB0");
 
+// Challenge 2 arrow function
 
-console.log(minMax[1,2,3,4,5,6]);
+const minMax = (arr) => {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    return [min, max];
+}
+
+console.log(minMax([2,1]));
+
+// console.log(minMax([1,2,3,4,5,6,7,8,9]));
+
+
+// const arr = [1,2,3,4,5,6];
+
+// console.log(...arr);
+// console.log(Math.max(arr.entries));
