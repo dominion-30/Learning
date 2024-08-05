@@ -318,19 +318,19 @@ number.forEach(n=>{
 // in order to solve this, we create an IIFE(Imediately Invoked Function Expression)
 
 // syntax of IIFE
-(function(){
-    const user = "John";
-    console.log(user);
+// (function(){
+//     const user = "John";
+//     console.log(user);
 
-    const hello = ()=> console.log("hello from inside the IIFE");
-    hello();
+//     const hello = ()=> console.log("hello from inside the IIFE");
+//     hello();
 
-})();
+// })();
 
-(function(a){
-    console.log(a * 2);
+// (function(a){
+//     console.log(a * 2);
 
-})(4);
+// })(4);
 
 // (function add(a,b){
 //     return a + b;
@@ -360,9 +360,9 @@ number.forEach(n=>{
 // console.log("cel-fah", 180/100 + 32);
 // console.log("feh-cel", (100/180)-32);
 
-const getCelsius = Fahrenheit=> console.log(`The temperature of ${Fahrenheit} F is ${(Fahrenheit - 32) * (100/180)} \xB0C`);
+// const getCelsius = Fahrenheit=> console.log(`The temperature of ${Fahrenheit} F is ${(Fahrenheit - 32) * (100/180)} \xB0C`);
 
-getCelsius(50);
+// getCelsius(50);
 
 
 // Challenge 2
@@ -381,16 +381,16 @@ getCelsius(50);
 
 // Challenge 2 arrow function
 
-const minMax = (arr) => {
-    const min = Math.min(...arr);
-    const max = Math.max(...arr);
-    return {
-        min,
-        max,
-    }
-}
+// const minMax = (arr) => {
+//     const min = Math.min(...arr);
+//     const max = Math.max(...arr);
+//     return {
+//         min,
+//         max,
+//     }
+// }
 
-console.log(minMax([1,2,300,4,5]));
+// console.log(minMax([1,2,300,4,5]));
 
 // console.log(minMax([1,2,3,4,5,6,7,8,9]));
 
@@ -402,9 +402,65 @@ console.log(minMax([1,2,300,4,5]));
 
 // Challenge 3
 
-((L,W)=>{
+// ((L,W)=>{
   
-    console.log(`The rectangle has a length ${L} cm and width ${W} cm. The area is ${L*W} cm^2`);
+//     console.log(`The rectangle has a length ${L} cm and width ${W} cm. The area is ${L*W} cm^2`);
 
-})(10,5);
+// })(10,5);
 
+
+// Execution Context
+
+// const x = 100;
+// const y = 50;
+
+
+// function getSum(n1,n2){
+//     const sum = n1 + n2;
+//     return sum
+// }
+
+// let sum1 = getSum(x,y);
+// let sum2 = getSum(10,5);
+
+// console.log(sum1, sum2);
+
+
+// first example
+
+// function first(){
+//     console.log("first...");
+// }
+
+// function second(){
+//     console.log("second...");
+// }
+
+// function third(){
+//     console.log("third...");
+// }
+
+
+// first();
+// second();
+// third();
+
+
+// Second example
+
+function first(){
+    console.log("first...");
+    second();
+}
+
+function second(){
+    console.log("second...");
+    third();
+}
+
+function third(){
+    console.log("third...");
+}
+
+
+first();
