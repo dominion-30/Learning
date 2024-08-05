@@ -36,7 +36,7 @@ if(x!==y){
 // d = new Date(2021, 6, 10, 22,5,0);
 // console.log( d);
 
-const d = new Date(10,30,2022,12,30,0);
+const d = new Date(10,30,2022,17,00,0);
 const hour = d.getHours();
 // console.log(hour);
 
@@ -72,13 +72,26 @@ else{
     }
 }
 
-if(hour >= 7 && hour < 17){
+if(hour >= 7 && hour < 12)  {
+   
+
     console.log("It is work time");
     
 }
+
+else if (hour >=12 && hour < 13 || hour >=15 && hour <16){
+    console.log("Break Time");
+}
+
 else{
-    if (hour >=12 && hour < 13 || hour >=15 && hour <16){
-        console.log("Break Time");
+    if (hour >= 13 && hour < 15){
+        console.log("It is work time");
+    }
+    else if( hour >=16 && hour < 17){
+        console.log("it is work time");
+    }
+    else{
+        console.log("Office is closed");
     }
 }
 
