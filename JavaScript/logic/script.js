@@ -95,12 +95,12 @@
 //     }
 // }
 
-const d = new Date(2022, 1, 10, 10, 0, 0);
+// const d = new Date(2022, 1, 10, 10, 0, 0);
 // const d = new Date('2022-02-10T10:00:00');
 
-const Getmonth = d.getMonth();
+// const Getmonth = d.getMonth();
 
-let month = Getmonth + 1;
+// let month = Getmonth + 1;
 
 // switch(month){
 //     case 1:
@@ -133,3 +133,32 @@ let month = Getmonth + 1;
 // }
 
 // console.log(hour);
+
+// const email = "test@test.com";
+// const name = "";
+
+// if(email){
+//     console.log("you passed in an email");
+// }
+
+// console.log(email, Boolean(email), Boolean(name));
+
+// Falsy Values
+
+// - false
+//  - 0
+//  - "" or '' (Empty string)
+//  - null
+//  - undefined
+//  - NaN
+
+
+const x = " ";
+
+if(x){
+    console.log("This is a truty value");
+}
+else{
+    console.log("This is a falsy value");
+}
+console.log(Boolean(x));
