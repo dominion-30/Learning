@@ -95,26 +95,41 @@
 //     }
 // }
 
-// const d = new Date(2022, 1, 10, 8, 0, 0);
-const d = new Date('2022-04-10T08:00:00');
+const d = new Date(2022, 1, 10, 10, 0, 0);
+// const d = new Date('2022-02-10T10:00:00');
 
 const Getmonth = d.getMonth();
 
 let month = Getmonth + 1;
 
-switch(month){
-    case 1:
-        console.log("It is January");
-        break;
+// switch(month){
+//     case 1:
+//         console.log("It is January");
+//         break;
     
-    case 2:
-        console.log("It is February");
-        break;
+//     case 2:
+//         console.log("It is February");
+//         break;
 
-    case 3:
-        console.log("It is March");
-        break;
+//     case 3:
+//         console.log("It is March");
+//         break;
 
-    default:
-        console.log("It is neither January, February or March");
-}
+//     default:
+//         console.log("It is neither January, February or March");
+// }
+// const hour = d.getHours();
+// switch (true){
+
+//     case hour < 12:
+//         console.log("Good morning");
+//         break;
+//     case hour < 18:
+//         console.log("Good afternoon");
+//         break;
+//     default:
+//         console.log("Good night");
+
+// }
+
+// console.log(hour);
