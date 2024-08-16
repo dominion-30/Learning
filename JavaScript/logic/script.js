@@ -215,16 +215,16 @@ else{
 
 // checking for empty array
 
-const posts = [1];
+// const posts = [1];
 
-if (posts.length > 0){
-    console.log("list posts");
-}
-else{
-    console.log("No post to list");
-}
+// if (posts.length > 0){
+//     console.log("list posts");
+// }
+// else{
+//     console.log("No post to list");
+// }
 
-console.log(posts.length);
+// console.log(posts.length);
 
 // checking for empty objects
 
@@ -232,12 +232,50 @@ const user = {
     // name: "Ayo",
 }
 
-if(Object.keys(user).length > 0){
-    console.log("list user");
-}
-else{
-    console.log("No user to list");
-}
+// if(Object.keys(user).length > 0){
+//     console.log("list user");
+// }
+// else{
+//     console.log("No user to list");
+// }
 
 
-console.log(Object.keys(user));
+// console.log(Object.keys(user));
+
+
+// loose equality
+// console.log(false == 0);
+// console.log("" == 0);
+// console.log(null == undefined);
+
+// Logical Operators
+
+console.log(40 > 20 && 30 > 15 && 10 < 20);
+console.log(10 > 20 || 30 > 15);
+
+
+//  && - will return first falsy value or the last value
+
+let a;
+a = 10 && 20;
+a = 10 && 20 && 30;
+a = 10 && 0 && 30;
+a = 10 && "" && 0 && 30;
+console.log(a);
+
+const posts = [];
+console.log("start");
+console.log(posts.lenght > 0 && console.log(posts[0]));
+console.log("again");
+posts.length > 0 && console.log(posts[0]);
+// console.log(posts.length);
+// posts.lenght > 0 && console.log(posts[0]);
+
+//  || - Will return the first truthy value or the last value
+
+let b;
+
+b = 10 || 20;
+b = 0 || 20;
+b = 0 || null|| ""|| undefined;
+console.log(b);
