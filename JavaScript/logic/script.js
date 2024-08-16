@@ -153,12 +153,91 @@
 //  - NaN
 
 
-const x = " ";
+// const x = " ";
 
-if(x){
-    console.log("This is a truty value");
+// if(x){
+//     console.log("This is a truty value");
+// }
+// else{
+//     console.log("This is a falsy value");
+// }
+// console.log(Boolean(x));
+
+const email = "test@test.com";
+// const x = "";
+
+// if(email){
+//     console.log("You passed in an email");
+// }
+
+
+// console.log(Boolean(email), Boolean(x));
+// const x = {name:"Ayo",
+//     age:26,
+//     gender:"Male",
+
+// };
+const x = function (){
+
+}
+if (x){
+    console.log("This is truthey");
 }
 else{
-    console.log("This is a falsy value");
+    console.log("This is falsey");
 }
 console.log(Boolean(x));
+
+// Truthy values:
+// Everything else that is not falsy
+// true
+// "0" (0 in a string)
+//  " " (space in a string)
+// "false" (false in a string)
+//  empty object:
+// [] (empty array)
+// {} (empty object)
+// function (){} (empty function)
+
+let y = typeof(x);
+console.log(y);
+
+// Truty and falsy caveats
+
+const children = "";
+
+if(children){
+    console.log(`You have ${children} children`);
+}
+else{
+    console.log("Please enter number of children");
+}
+
+// checking for empty array
+
+const posts = [1];
+
+if (posts.length > 0){
+    console.log("list posts");
+}
+else{
+    console.log("No post to list");
+}
+
+console.log(posts.length);
+
+// checking for empty objects
+
+const user = {
+    // name: "Ayo",
+}
+
+if(Object.keys(user).length > 0){
+    console.log("list user");
+}
+else{
+    console.log("No user to list");
+}
+
+
+console.log(Object.keys(user));
