@@ -163,7 +163,7 @@
 // }
 // console.log(Boolean(x));
 
-const email = "test@test.com";
+// const email = "test@test.com";
 // const x = "";
 
 // if(email){
@@ -177,16 +177,16 @@ const email = "test@test.com";
 //     gender:"Male",
 
 // };
-const x = function (){
+// const x = function (){
 
-}
-if (x){
-    console.log("This is truthey");
-}
-else{
-    console.log("This is falsey");
-}
-console.log(Boolean(x));
+// }
+// if (x){
+//     console.log("This is truthey");
+// }
+// else{
+//     console.log("This is falsey");
+// }
+// console.log(Boolean(x));
 
 // Truthy values:
 // Everything else that is not falsy
@@ -199,19 +199,19 @@ console.log(Boolean(x));
 // {} (empty object)
 // function (){} (empty function)
 
-let y = typeof(x);
-console.log(y);
+// let y = typeof(x);
+// console.log(y);
 
 // Truty and falsy caveats
 
-const children = "";
+// const children = "";
 
-if(children){
-    console.log(`You have ${children} children`);
-}
-else{
-    console.log("Please enter number of children");
-}
+// if(children){
+//     console.log(`You have ${children} children`);
+// }
+// else{
+//     console.log("Please enter number of children");
+// }
 
 // checking for empty array
 
@@ -228,9 +228,9 @@ else{
 
 // checking for empty objects
 
-const user = {
-    // name: "Ayo",
-}
+// const user = {
+//     // name: "Ayo",
+// }
 
 // if(Object.keys(user).length > 0){
 //     console.log("list user");
@@ -250,32 +250,119 @@ const user = {
 
 // Logical Operators
 
-console.log(40 > 20 && 30 > 15 && 10 < 20);
-console.log(10 > 20 || 30 > 15);
+// console.log(40 > 20 && 30 > 15 && 10 < 20);
+// console.log(10 > 20 || 30 > 15);
 
 
 //  && - will return first falsy value or the last value
 
+// let a;
+// a = 10 && 20;
+// a = 10 && 20 && 30;
+// a = 10 && 0 && 30;
+// a = 10 && "" && 0 && 30;
+// console.log(a);
+
+// const posts = [];
+// console.log("start");
+// console.log(posts.lenght > 0 && console.log(posts[0]));
+// console.log("again");
+// posts.length > 0 && console.log(posts[0]);
+// console.log(posts.length);
+// posts.lenght > 0 && console.log(posts[0]);
+
+//  || - Will return the first truthy value or the last value
+
+// let b;
+
+// b = 10 || 20;
+// b = 0 || 20;
+// b = 0 || null|| ""|| undefined;
+// console.log(b);
+
+const email = "test@test.com";
+
+if(email){
+    console.log("You passed in an email");
+}
+
+// Falsy values:
+//  - false
+//  - 0
+//  - "" or '' (Empty string)
+// null
+// undefined
+// NaN
+
+// Truthy Values:
+// Everything else that is not falsy
+// true
+// "0" (0 in a string)
+// " " (space in a string)
+// "false" (false in a string)
+// [] - (empty array)
+//  - {} (empty object)
+//  - function (){} (empty function)
+
+const x = function (){};
+
+if (x){
+    console.log("This is truthy");
+}
+else{
+    console.log("This is falsy");
+}
+
+console.log(Boolean(x));
+
+// Truthy and falsy caveats
+
+const children = 0;
+
+if(!isNaN(children)){
+    console.log(`You have ${children} children`);
+}
+else{
+    console.log("Please enter number of children");
+}
+
+
+// Checking for empty arrays
+
+const posts = [11,2];
+// console.log(posts.length);
+if(posts.length> 0){
+    console.log("list post");
+}
+else{
+    console.log("No post to show");
+}
+
+// checking for empty objects
+
+const user = {
+    name: "Brad",
+};
+// console.log(Object.keys(user)> 0);
+if (Object.keys(user)> 0){
+    console.log("List users");
+}
+else{
+    console.log("No user to list");
+}
+
+console.log(10 < 20 && 30 > 15 && 40 > 30);
+console.log(10 > 20 || 30 > 15);
+
+// && - Will return the first falsy value or the last value
+
 let a;
+
 a = 10 && 20;
 a = 10 && 20 && 30;
 a = 10 && 0 && 30;
 a = 10 && "" && 0 && 30;
 console.log(a);
 
-const posts = [];
-console.log("start");
-console.log(posts.lenght > 0 && console.log(posts[0]));
-console.log("again");
-posts.length > 0 && console.log(posts[0]);
-// console.log(posts.length);
-// posts.lenght > 0 && console.log(posts[0]);
-
-//  || - Will return the first truthy value or the last value
-
-let b;
-
-b = 10 || 20;
-b = 0 || 20;
-b = 0 || null|| ""|| undefined;
-console.log(b);
+const post = ["post one", "post two"];
+post.length> 0 && console.log(post[0]);
