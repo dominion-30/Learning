@@ -280,11 +280,11 @@
 // b = 0 || null|| ""|| undefined;
 // console.log(b);
 
-const email = "test@test.com";
+// const email = "test@test.com";
 
-if(email){
-    console.log("You passed in an email");
-}
+// if(email){
+//     console.log("You passed in an email");
+// }
 
 // Falsy values:
 //  - false
@@ -304,65 +304,134 @@ if(email){
 //  - {} (empty object)
 //  - function (){} (empty function)
 
-const x = function (){};
+// const x = function (){};
 
-if (x){
-    console.log("This is truthy");
-}
-else{
-    console.log("This is falsy");
-}
+// if (x){
+//     console.log("This is truthy");
+// }
+// else{
+//     console.log("This is falsy");
+// }
 
-console.log(Boolean(x));
+// console.log(Boolean(x));
 
 // Truthy and falsy caveats
 
-const children = 0;
+// const children = 0;
 
-if(!isNaN(children)){
-    console.log(`You have ${children} children`);
-}
-else{
-    console.log("Please enter number of children");
-}
+// if(!isNaN(children)){
+//     console.log(`You have ${children} children`);
+// }
+// else{
+//     console.log("Please enter number of children");
+// }
 
 
 // Checking for empty arrays
 
-const posts = [11,2];
+// const posts = [11,2];
 // console.log(posts.length);
-if(posts.length> 0){
-    console.log("list post");
-}
-else{
-    console.log("No post to show");
-}
+// if(posts.length> 0){
+//     console.log("list post");
+// }
+// else{
+//     console.log("No post to show");
+// }
 
 // checking for empty objects
 
-const user = {
-    name: "Brad",
-};
+// const user = {
+//     name: "Brad",
+// };
 // console.log(Object.keys(user)> 0);
-if (Object.keys(user)> 0){
-    console.log("List users");
-}
-else{
-    console.log("No user to list");
-}
+// if (Object.keys(user)> 0){
+//     console.log("List users");
+// }
+// else{
+//     console.log("No user to list");
+// }
 
-console.log(10 < 20 && 30 > 15 && 40 > 30);
-console.log(10 > 20 || 30 > 15);
+// console.log(10 < 20 && 30 > 15 && 40 > 30);
+// console.log(10 > 20 || 30 > 15);
 
 // && - Will return the first falsy value or the last value
 
-let a;
+// let a;
 
-a = 10 && 20;
-a = 10 && 20 && 30;
-a = 10 && 0 && 30;
-a = 10 && "" && 0 && 30;
-console.log(a);
+// a = 10 && 20;
+// a = 10 && 20 && 30;
+// a = 10 && 0 && 30;
+// a = 10 && "" && 0 && 30;
+// console.log(a);
 
-const post = ["post one", "post two"];
-post.length> 0 && console.log(post[0]);
+// const post = ["post one", "post two"];
+// post.length> 0 && console.log(post[0]);
+
+
+// will return the first truthy value or the last value
+
+// let b;
+// b = 10 || 20;
+// b = 0|| null|| ""|| undefined
+// console.log(b);
+
+
+// ?? - Returns the right side operand when the left is null or undefined.
+
+// let c;
+// c = null ?? 6;
+// c = 10 ?? 20;
+// console.log(c);
+
+
+//  ||= assigns the right side value only if the left is a falsy value.
+
+// let a  = false;
+
+// if(!a){
+//     a = 10;
+// }
+
+
+
+// a = a|| 10
+// console.log(a);
+
+// a||=20
+// console.log(a);
+
+// Ternary operator
+// using if statement
+const age = 19;
+
+if(age >= 18){
+    console.log("You can vote!");
+}
+else{
+    console.log("You cannot vote");
+}
+
+// using ternary operator
+
+age >=18 ? console.log("You are an adult"): console.log("You are not yet an adult");
+
+// assigning a conditional value to a variable
+
+const canVote = age >= 18 ? true: false;
+console.log(canVote);
+
+const auth = true;
+let redirect;
+
+// if(auth){
+//     alert("Welcome to the dashboard");
+//     redirect = "/dashboard";
+// }else{
+//     alert("/Access Denied");
+//     redirect= "/login";
+// }
+// console.log(redirect);
+
+
+auth ? (alert("Welcome to the dashboard"), redirect = "/dashboard"): (alert("Access Denied"), redirect = "/login");
+console.log(redirect);
